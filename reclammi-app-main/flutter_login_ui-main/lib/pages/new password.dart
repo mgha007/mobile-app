@@ -75,11 +75,11 @@ class _newpasswordState extends State<newpassword> {
                           children: <Widget>[
                             Container(
                               child: TextFormField(
-                                decoration: ThemeHelper().textInputDecoration("mot de pass", "Enter your mot de pass"),
+                                decoration: ThemeHelper().textInputDecoration("Password", "Enter your Password"),
                                 controller: _passController,
                                 validator: (val){
                                   if(val!.isEmpty){
-                                    return "mot de passe can't be empty";
+                                    return "Password can't be empty";
                                   }
 
                                 },

@@ -167,7 +167,7 @@ class LineChartSample extends StatelessWidget {
               leftTitles: AxisTitles(
                 axisNameSize: 20,
                 axisNameWidget: const Text(
-                  'nombre de reclamation',
+                  'Number of reclamations',
                   style: TextStyle(
                     fontSize: 13,
                     color: Colors.black,

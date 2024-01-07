@@ -40,7 +40,11 @@ class _ProfilePageState extends State<ProfilePage>{
       appBar: AppBar(
         backgroundColor: Colors.teal,
         elevation: 4,
+<<<<<<< HEAD
         title: Text("Acceuil",
+=======
+        title: Text("Home",
+>>>>>>> 057d95b16ee2b57079102eb02d84448f20c19485
           style: TextStyle(
               fontFamily:'Poppins',color: Colors.white, fontWeight: FontWeight.bold),
         ),
@@ -78,7 +82,11 @@ class _ProfilePageState extends State<ProfilePage>{
                 ),
 
                 child: Text(
+<<<<<<< HEAD
                   "Les plus utilisées",
+=======
+                  "The most popular complaints",
+>>>>>>> 057d95b16ee2b57079102eb02d84448f20c19485
                   style: TextStyle(
                     fontFamily: 'Poppins',
                     fontStyle: FontStyle.italic,
@@ -122,7 +130,11 @@ class _ProfilePageState extends State<ProfilePage>{
                       ],
                     ),
                     child: Text(
+<<<<<<< HEAD
                       "Toutes les types de réclamations ",
+=======
+                      "All types of complaints ",
+>>>>>>> 057d95b16ee2b57079102eb02d84448f20c19485
                       style: TextStyle(
                         fontFamily: 'Poppins',
                         fontStyle: FontStyle.italic,
@@ -146,8 +158,13 @@ class _ProfilePageState extends State<ProfilePage>{
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
+<<<<<<< HEAD
                         customCard(icon: Icons.edit_note, title: 'Education', subtitle: 'Accès et logement / sécurité',page: education(),context: context, ),
                         customCard(icon: Icons.medication_sharp, title: 'Santé', subtitle: ' Erreurs médicales / Qualité des soins ',page: Medical(),context: context, )
+=======
+                        customCard(icon: Icons.edit_note, title: 'Education', subtitle: 'Quality of education/ Access and accommodation',page: education(),context: context, ),
+                        customCard(icon: Icons.medication_sharp, title: 'Health', subtitle: ' Medical errors / Quality of care ',page: Medical(),context: context, )
+>>>>>>> 057d95b16ee2b57079102eb02d84448f20c19485
                       ],
                     ),
                   ),
@@ -156,8 +173,13 @@ class _ProfilePageState extends State<ProfilePage>{
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
+<<<<<<< HEAD
                         customCard(icon: Icons.add_road_outlined, title: 'Transport', subtitle: 'Accessibilité, Qualité de service ',page: transport(),context: context, ),
                         customCard(icon: Icons.water_sharp, title: 'Eau', subtitle: 'Qualité de service / la qualité de l eau',page: water(),context: context, )
+=======
+                        customCard(icon: Icons.add_road_outlined, title: 'Transportation', subtitle: 'Accessibility, Quality of service ',page: transport(),context: context, ),
+                        customCard(icon: Icons.water_sharp, title: 'eau', subtitle: 'Quality of service / Water quality',page: water(),context: context, )
+>>>>>>> 057d95b16ee2b57079102eb02d84448f20c19485
                       ],
                     ),
                   ),
@@ -166,8 +188,8 @@ class _ProfilePageState extends State<ProfilePage>{
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        customCard(icon: Icons.location_city, title: 'Consumer Affairs', subtitle: 'unfair business practices',page:consumer(),context: context, ),
-                        customCard(icon: Icons.electric_bolt, title: 'electricity', subtitle: 'payment issuesPower /  Quality of service ',page: electricity(),context: context, )
+                        customCard(icon: Icons.location_city, title: 'Consumer Affairs', subtitle: 'Unfair business practices',page:consumer(),context: context, ),
+                        customCard(icon: Icons.electric_bolt, title: 'electricity', subtitle: 'Payment issues /  Quality of service ',page: electricity(),context: context, )
                       ],
                     ),
                   ),
@@ -176,8 +198,13 @@ class _ProfilePageState extends State<ProfilePage>{
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
+<<<<<<< HEAD
                         customCard(icon: Icons.electric_bolt, title: 'environnement', subtitle: 'Pollution de l air/ Pollution de rue  ',page: environement(),context: context, ),
                         customCard(icon: Icons.mark_chat_read_outlined, title: 'autre', subtitle: '',page: NewReclamationForm(type:"autre",complaintTypes: ['autre'] ,),  context: context, )
+=======
+                        customCard(icon: Icons.electric_bolt, title: 'Environment', subtitle: 'Air Pollution/ Street Pollution',page: environement(),context: context, ),
+                        customCard(icon: Icons.mark_chat_read_outlined, title: 'Other', subtitle: '',page: NewReclamationForm(type:"Other",complaintTypes: ['Other'] ,),  context: context, )
+>>>>>>> 057d95b16ee2b57079102eb02d84448f20c19485
 
                       ],
                     ),

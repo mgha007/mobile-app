@@ -125,7 +125,7 @@ class _RegistrationPageState extends State<RegistrationPage>{
                             Container(
                               child: TextField(
                                 controller:_firstnameController ,
-                                decoration: ThemeHelper().textInputDecoration('nom', 'Enter votre nom'),
+                                decoration: ThemeHelper().textInputDecoration('First Nmae', 'Enter your first name'),
                               ),
                               decoration: ThemeHelper().inputBoxDecorationShaddow(),
                             ),
@@ -133,7 +133,7 @@ class _RegistrationPageState extends State<RegistrationPage>{
                             Container(
                               child: TextField(
                                 controller:_lastnameController ,
-                                decoration: ThemeHelper().textInputDecoration('prenom', 'Enter votre prenom'),
+                                decoration: ThemeHelper().textInputDecoration('Last Name', 'Enter your last name'),
                               ),
                               decoration: ThemeHelper().inputBoxDecorationShaddow(),
                             ),
@@ -141,7 +141,7 @@ class _RegistrationPageState extends State<RegistrationPage>{
                             Container(
                               child: TextFormField(
                                 controller:_emailController ,
-                                decoration: ThemeHelper().textInputDecoration("E-mail ", "Enter votre email"),
+                                decoration: ThemeHelper().textInputDecoration("E-mail ", "Enter your email"),
                                 keyboardType: TextInputType.emailAddress,
                                 validator: (val) {
                                   if(!(val!.isEmpty) && !RegExp(r"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,253}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,253}[a-zA-Z0-9])?)*$").hasMatch(val)){
@@ -157,8 +157,8 @@ class _RegistrationPageState extends State<RegistrationPage>{
                               child: TextFormField(
                                 controller:_mobileController ,
                                 decoration: ThemeHelper().textInputDecoration(
-                                    "téléphone",
-                                    "Enter votre num téléphone"),
+                                    "Phone Number",
+                                    "Enter your phone number"),
                                 keyboardType: TextInputType.phone,
                                 validator: (val) {
                                   if(!(val!.isEmpty) && !RegExp(r"^(\d+)*$").hasMatch(val)){
@@ -175,7 +175,7 @@ class _RegistrationPageState extends State<RegistrationPage>{
                                 obscureText: true,
                                 controller:_passwordController ,
                                 decoration: ThemeHelper().textInputDecoration(
-                                    "mot de passe*", "Enter votre mot de passe"),
+                                    "Password*", "Enteryour password"),
                                 validator: (val) {
                                   if (val!.isEmpty) {
                                     return "Please enter your password";
@@ -193,7 +193,7 @@ class _RegistrationPageState extends State<RegistrationPage>{
                                 child: Padding(
                                   padding: const EdgeInsets.fromLTRB(40, 10, 40, 10),
                                   child: Text(
-                                    "enrigistrer".toUpperCase(),
+                                    "Save".toUpperCase(),
                                     style: TextStyle(
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
