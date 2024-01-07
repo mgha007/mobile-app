@@ -40,7 +40,7 @@ class _ProfilePageState extends State<ProfilePage>{
       appBar: AppBar(
         backgroundColor: Colors.teal,
         elevation: 4,
-        title: Text("home",
+        title: Text("Acceuil",
           style: TextStyle(
               fontFamily:'Poppins',color: Colors.white, fontWeight: FontWeight.bold),
         ),
@@ -78,7 +78,7 @@ class _ProfilePageState extends State<ProfilePage>{
                 ),
 
                 child: Text(
-                  "les reclamation plus populaires",
+                  "Les plus utilisées",
                   style: TextStyle(
                     fontFamily: 'Poppins',
                     fontStyle: FontStyle.italic,
@@ -122,7 +122,7 @@ class _ProfilePageState extends State<ProfilePage>{
                       ],
                     ),
                     child: Text(
-                      "tout les type de reclamation ",
+                      "Toutes les types de réclamations ",
                       style: TextStyle(
                         fontFamily: 'Poppins',
                         fontStyle: FontStyle.italic,
@@ -146,8 +146,8 @@ class _ProfilePageState extends State<ProfilePage>{
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        customCard(icon: Icons.edit_note, title: 'education', subtitle: 'Accès et logement / sécurité',page: education(),context: context, ),
-                        customCard(icon: Icons.medication_sharp, title: 'santer', subtitle: ' Erreurs médicales / Qualité des soins ',page: Medical(),context: context, )
+                        customCard(icon: Icons.edit_note, title: 'Education', subtitle: 'Accès et logement / sécurité',page: education(),context: context, ),
+                        customCard(icon: Icons.medication_sharp, title: 'Santé', subtitle: ' Erreurs médicales / Qualité des soins ',page: Medical(),context: context, )
                       ],
                     ),
                   ),
@@ -156,8 +156,8 @@ class _ProfilePageState extends State<ProfilePage>{
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        customCard(icon: Icons.add_road_outlined, title: 'transport', subtitle: 'Accessibilité, Qualité de service ',page: transport(),context: context, ),
-                        customCard(icon: Icons.water_sharp, title: 'eau', subtitle: 'Qualité de service / la qualité d eau',page: water(),context: context, )
+                        customCard(icon: Icons.add_road_outlined, title: 'Transport', subtitle: 'Accessibilité, Qualité de service ',page: transport(),context: context, ),
+                        customCard(icon: Icons.water_sharp, title: 'Eau', subtitle: 'Qualité de service / la qualité de l eau',page: water(),context: context, )
                       ],
                     ),
                   ),
@@ -176,7 +176,7 @@ class _ProfilePageState extends State<ProfilePage>{
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        customCard(icon: Icons.electric_bolt, title: 'environement', subtitle: 'Pollution de l air/ Pollution de rue  ',page: environement(),context: context, ),
+                        customCard(icon: Icons.electric_bolt, title: 'environnement', subtitle: 'Pollution de l air/ Pollution de rue  ',page: environement(),context: context, ),
                         customCard(icon: Icons.mark_chat_read_outlined, title: 'autre', subtitle: '',page: NewReclamationForm(type:"autre",complaintTypes: ['autre'] ,),  context: context, )
 
                       ],

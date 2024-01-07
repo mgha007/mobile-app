@@ -1,4 +1,4 @@
-final url = 'http://localhost:3000/';
+final url = 'http://192.168.56.1:3000/';
 final signup = url + "signup";
 final login = url + "login";
 final forgotp =url+"forgotPassword";
