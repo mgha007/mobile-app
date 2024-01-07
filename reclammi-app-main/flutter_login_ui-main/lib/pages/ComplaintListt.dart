@@ -60,7 +60,7 @@ class _ComplaintListState extends State<toutlespost> {
       appBar: AppBar(
         backgroundColor: Colors.teal,
         elevation: 4,
-        title: Text('Liste de réclamations'),
+        title: Text('List of complaints'),
       ),
       body: ListView(
         children: [
@@ -72,19 +72,19 @@ class _ComplaintListState extends State<toutlespost> {
             ),
             child: DropdownButtonFormField<String>(
               decoration: InputDecoration.collapsed(
-                hintText: 'Filtrer par catégorie',
+                hintText: 'Filter by category',
               ),
               value: _selectedCategory,
               items: [
-                'tout les reclamation',
-                'education',
-                'santer',
-                'eau',
-                'transport',
-                'électricité',
-                'consumer affer',
-                'environement',
-                'Autre',
+                'All complaints',
+                'Education',
+                'Health',
+                'Water',
+                'Transportation',
+                'Electricity',
+                'Consumer affair',
+                'Environment',
+                'Other',
               ]
                   .map((value) => DropdownMenuItem<String>(
                 value: value,
@@ -210,7 +210,7 @@ class _ComplaintListState extends State<toutlespost> {
                           ),
                           SizedBox(width: 10),
                           Text(
-                            '${complaints![index]['submitter']?["firstName"] ?? '' }',
+                            '${complaints![index]['submit']?["firstName"] ?? '' }',
 
                             style: TextStyle(
                               fontSize: 16,

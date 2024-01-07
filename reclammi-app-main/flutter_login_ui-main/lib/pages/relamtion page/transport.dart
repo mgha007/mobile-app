@@ -13,7 +13,7 @@ class transport extends StatefulWidget {
 }
 
 class _transportState extends State<transport> {
-  String type ="transport";
+  String type ="Transportation";
   final List<String> complaintTypes = ['Type 1', 'Type 2', 'Type 3'];
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class _transportState extends State<transport> {
         appBar: AppBar(
           backgroundColor: Colors.teal,
           elevation: 4,
-          title: Text('transport'),
+          title: Text('Transportion'),
         ),
         body: Container(
           decoration: BoxDecoration(
@@ -33,11 +33,11 @@ class _transportState extends State<transport> {
           height: MediaQuery.of(context).size.height,
           child: Column(
            children: [
-             alignCard(icon: Icons.monetization_on_outlined, title: 'Problèmes de tarifs ',  page: NewReclamationForm(type:type,complaintTypes: ['Problèmes de tarifs ','Accessibilité','Qualité de service','Problèmes de sécurité','autre']), context: context),
-             alignCard(icon: CupertinoIcons.lock, title: 'Accessibilité',  page: NewReclamationForm(type:type,complaintTypes:['Accessibilité','Problèmes de tarifs ','Qualité de service','Problèmes de sécurité','autre']), context: context),
-             alignCard(icon: Icons.info, title: 'Qualité de service',  page: NewReclamationForm(type:type,complaintTypes: ['Qualité de service','Problèmes de tarifs ','Accessibilité','Problèmes de sécurité','autre']), context: context),
-             alignCard(icon: Icons.back_hand_outlined, title: 'Problèmes de sécurité',  page: NewReclamationForm(type:type,complaintTypes: ['Problèmes de sécurité','Problèmes de tarifs','Accessibilité','Qualité de service','autre']), context: context),
-             alignCard(icon: Icons.mark_chat_read_outlined, title: 'autre',  page: NewReclamationForm(type:type,complaintTypes:['autre','Problèmes de tarifs ','Accessibilité','Qualité de service','Problèmes de sécurité',]), context: context),
+             alignCard(icon: Icons.monetization_on_outlined, title: 'Pricing issues ',  page: NewReclamationForm(type:type,complaintTypes: ['Problèmes de tarifs ','Accessibilité','Qualité de service','Problèmes de sécurité','autre']), context: context),
+             alignCard(icon: CupertinoIcons.lock, title: 'Accessibility',  page: NewReclamationForm(type:type,complaintTypes:['Accessibilité','Problèmes de tarifs ','Qualité de service','Problèmes de sécurité','autre']), context: context),
+             alignCard(icon: Icons.info, title: 'Quality of service',  page: NewReclamationForm(type:type,complaintTypes: ['Qualité de service','Problèmes de tarifs ','Accessibilité','Problèmes de sécurité','autre']), context: context),
+             alignCard(icon: Icons.back_hand_outlined, title: 'Security problems',  page: NewReclamationForm(type:type,complaintTypes: ['Problèmes de sécurité','Problèmes de tarifs','Accessibilité','Qualité de service','autre']), context: context),
+             alignCard(icon: Icons.mark_chat_read_outlined, title: 'Other',  page: NewReclamationForm(type:type,complaintTypes:['autre','Problèmes de tarifs ','Accessibilité','Qualité de service','Problèmes de sécurité',]), context: context),
            ],
           ),
         )

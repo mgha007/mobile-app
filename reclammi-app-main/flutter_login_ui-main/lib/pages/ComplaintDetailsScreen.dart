@@ -90,7 +90,7 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
                       ),
                       padding: EdgeInsets.only(bottom: 8.0),
                       child: Text(
-                        'Soummet par :',
+                        'Submitted by:',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 18.0,
@@ -199,7 +199,7 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
                       ),
                       padding: EdgeInsets.only(bottom: 8.0),
                       child: Text(
-                        'Statut:',
+                        'Status:',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 18.0,

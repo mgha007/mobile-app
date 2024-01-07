@@ -19,7 +19,7 @@ class _StatistiqueState extends State<Statistique> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Reclamation Statistics"),
+        title: Text("Complaint Statistics"),
       ),
       body: Container(
         padding: EdgeInsets.all(20),

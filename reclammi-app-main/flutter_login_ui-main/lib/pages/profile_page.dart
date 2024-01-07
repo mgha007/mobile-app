@@ -40,7 +40,7 @@ class _ProfilePageState extends State<ProfilePage>{
       appBar: AppBar(
         backgroundColor: Colors.teal,
         elevation: 4,
-        title: Text("home",
+        title: Text("Home",
           style: TextStyle(
               fontFamily:'Poppins',color: Colors.white, fontWeight: FontWeight.bold),
         ),
@@ -78,7 +78,7 @@ class _ProfilePageState extends State<ProfilePage>{
                 ),
 
                 child: Text(
-                  "les reclamation plus populaires",
+                  "The most popular complaints",
                   style: TextStyle(
                     fontFamily: 'Poppins',
                     fontStyle: FontStyle.italic,
@@ -122,7 +122,7 @@ class _ProfilePageState extends State<ProfilePage>{
                       ],
                     ),
                     child: Text(
-                      "tout les type de reclamation ",
+                      "All types of complaints ",
                       style: TextStyle(
                         fontFamily: 'Poppins',
                         fontStyle: FontStyle.italic,
@@ -146,8 +146,8 @@ class _ProfilePageState extends State<ProfilePage>{
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        customCard(icon: Icons.edit_note, title: 'education', subtitle: 'Accès et logement / sécurité',page: education(),context: context, ),
-                        customCard(icon: Icons.medication_sharp, title: 'santer', subtitle: ' Erreurs médicales / Qualité des soins ',page: Medical(),context: context, )
+                        customCard(icon: Icons.edit_note, title: 'Education', subtitle: 'Quality of education/ Access and accommodation',page: education(),context: context, ),
+                        customCard(icon: Icons.medication_sharp, title: 'Health', subtitle: ' Medical errors / Quality of care ',page: Medical(),context: context, )
                       ],
                     ),
                   ),
@@ -156,8 +156,8 @@ class _ProfilePageState extends State<ProfilePage>{
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        customCard(icon: Icons.add_road_outlined, title: 'transport', subtitle: 'Accessibilité, Qualité de service ',page: transport(),context: context, ),
-                        customCard(icon: Icons.water_sharp, title: 'eau', subtitle: 'Qualité de service / la qualité d eau',page: water(),context: context, )
+                        customCard(icon: Icons.add_road_outlined, title: 'Transportation', subtitle: 'Accessibility, Quality of service ',page: transport(),context: context, ),
+                        customCard(icon: Icons.water_sharp, title: 'eau', subtitle: 'Quality of service / Water quality',page: water(),context: context, )
                       ],
                     ),
                   ),
@@ -166,8 +166,8 @@ class _ProfilePageState extends State<ProfilePage>{
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        customCard(icon: Icons.location_city, title: 'Consumer Affairs', subtitle: 'unfair business practices',page:consumer(),context: context, ),
-                        customCard(icon: Icons.electric_bolt, title: 'electricity', subtitle: 'payment issuesPower /  Quality of service ',page: electricity(),context: context, )
+                        customCard(icon: Icons.location_city, title: 'Consumer Affairs', subtitle: 'Unfair business practices',page:consumer(),context: context, ),
+                        customCard(icon: Icons.electric_bolt, title: 'electricity', subtitle: 'Payment issues /  Quality of service ',page: electricity(),context: context, )
                       ],
                     ),
                   ),
@@ -176,8 +176,8 @@ class _ProfilePageState extends State<ProfilePage>{
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        customCard(icon: Icons.electric_bolt, title: 'environement', subtitle: 'Pollution de l air/ Pollution de rue  ',page: environement(),context: context, ),
-                        customCard(icon: Icons.mark_chat_read_outlined, title: 'autre', subtitle: '',page: NewReclamationForm(type:"autre",complaintTypes: ['autre'] ,),  context: context, )
+                        customCard(icon: Icons.electric_bolt, title: 'Environment', subtitle: 'Air Pollution/ Street Pollution',page: environement(),context: context, ),
+                        customCard(icon: Icons.mark_chat_read_outlined, title: 'Other', subtitle: '',page: NewReclamationForm(type:"Other",complaintTypes: ['Other'] ,),  context: context, )
 
                       ],
                     ),
