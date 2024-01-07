@@ -123,7 +123,7 @@ class _ComplaintStatusPieChartState extends State<ComplaintStatusPieChart> {
       appBar: AppBar(
         backgroundColor: Colors.teal,
         elevation: 4,
-        title: Text('statistics'),
+        title: Text('Statistique'),
       ),
       body: SingleChildScrollView(
         physics: AlwaysScrollableScrollPhysics(),
@@ -136,7 +136,7 @@ class _ComplaintStatusPieChartState extends State<ComplaintStatusPieChart> {
             child: Align(
               alignment: Alignment.centerLeft,
               child: Text(
-                'Statistics on the number of complaints by status :',
+                'Statistiques sur le nombre de reclamation  par statut :',
                 style: TextStyle(
                   fontFamily: 'Poppins',
                   fontStyle: FontStyle.italic,
@@ -162,9 +162,9 @@ class _ComplaintStatusPieChartState extends State<ComplaintStatusPieChart> {
                       ),
                       statCard(
                           icon: Icons.warning,
-                          title: 'Reclamation on progress',
+                          title: 'reclamation on progress',
                           subtitle:
-                          'The number of complaints in progress is ',
+                          'les nombe de  reclamation on progress est ',
                           nombrereclam: inprogress.length,
                           color: Colors.orange),
                       SizedBox(
@@ -172,9 +172,9 @@ class _ComplaintStatusPieChartState extends State<ComplaintStatusPieChart> {
                       ),
                       statCard(
                           icon: Icons.check_circle,
-                          title: 'recamation resolved',
+                          title: 'recamation resolu ',
                           subtitle:
-                          'The number of complaints resolved is ',
+                          'le nombre de reclamation resolu est ',
                           nombrereclam: resolved.length,
                           color: Colors.green),
                       SizedBox(
@@ -194,9 +194,9 @@ class _ComplaintStatusPieChartState extends State<ComplaintStatusPieChart> {
                       ),
                       statCard(
                           icon: Icons.close_rounded,
-                          title: 'Pending complaints',
+                          title: 'les reclamation en attente',
                           subtitle:
-                          'The number of rejected claims is ',
+                          'le nombre de reclamation rejecter est ',
                           nombrereclam: pending.length,
                           color: Colors.red),
                       SizedBox(
@@ -204,8 +204,8 @@ class _ComplaintStatusPieChartState extends State<ComplaintStatusPieChart> {
                       ),
                       statCard(
                           icon: Icons.book,
-                          title: 'All complaints',
-                          subtitle: 'The total number of complaints',
+                          title: 'tout les reclamation',
+                          subtitle: 'le nombre totale de reclamation',
                           nombrereclam: complaints.length,
                           color: Colors.blue),
                       SizedBox(
@@ -251,7 +251,7 @@ class _ComplaintStatusPieChartState extends State<ComplaintStatusPieChart> {
             child: Align(
               alignment: Alignment.centerLeft,
               child: Text(
-                'Statistics on the number of complaints by category: ',
+                'Statistiques sur le nombre de reclamation  par catergories  : ',
                 style: TextStyle(
                   fontFamily: 'Poppins',
                   fontStyle: FontStyle.italic,

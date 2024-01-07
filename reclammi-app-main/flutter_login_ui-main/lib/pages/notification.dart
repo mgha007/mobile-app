@@ -13,7 +13,7 @@ class _notificationState extends State<notification>{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Notification PAGE",
+        title: Text("notification PAGE",
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
         iconTheme: IconThemeData(color: Colors.white),

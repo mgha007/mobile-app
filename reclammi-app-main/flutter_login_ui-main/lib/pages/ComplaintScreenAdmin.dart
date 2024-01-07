@@ -213,7 +213,7 @@ class _adminState extends State<admin> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Submitted by:',
+                      'Soummet par:',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 18.0,
@@ -243,7 +243,7 @@ class _adminState extends State<admin> {
                         ),
                         SizedBox(width: 8.0),
                         Text(
-                          '${widget.complaint['submit']['firstName'] ?? ''} ${widget.complaint['submit']['lastName'] ?? ''}',
+                          '${widget.complaint['submitter']['firstName'] ?? ''} ${widget.complaint['submitter']['lastName'] ?? ''}',
                           style: TextStyle(
                             fontSize: 16.0,
                           ),
@@ -254,7 +254,7 @@ class _adminState extends State<admin> {
 
                     SizedBox(height:10.0),
                     Text(
-                      'Title:',
+                      'Titre:',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 18.0,
@@ -277,7 +277,7 @@ class _adminState extends State<admin> {
                     ),
                     SizedBox(height: 10.0),
                     Text(
-                      '${widget.complaint['type']['type'] ?? ''} ${widget.complaint['type']['subtype'] ?? ''}',
+                      '${widget.complaint['type']['type'] ?? ''} ${widget.complaint['type']['soustype'] ?? ''}',
                       style: TextStyle(
                         fontSize: 16.0,
                       ),
@@ -299,7 +299,7 @@ class _adminState extends State<admin> {
                     ),
                     SizedBox(height: 16.0),
                     Text(
-                      'Status:',
+                      'Statu:',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 18.0,
@@ -413,7 +413,7 @@ class _adminState extends State<admin> {
     children: [
     SizedBox(height: 10),
     Text(
-    'Enter the response to this complaint:',
+    'Entrer la réponse à cette réclamation:',
     style: TextStyle(
     fontFamily: 'Poppins',
     fontWeight: FontWeight.bold,
@@ -450,7 +450,7 @@ class _adminState extends State<admin> {
     setState(() {});
     },
     child: Text(
-    'Send your reply',
+    'Envoyer votre réponse',
     style: TextStyle(
     fontFamily: 'Poppins',
     fontWeight: FontWeight.bold,
@@ -473,7 +473,7 @@ class _adminState extends State<admin> {
 
                     SizedBox(height: 16.0),
                     Text(
-                      'Comments:',
+                      'Commentaire:',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 18.0,
@@ -507,14 +507,14 @@ class _adminState extends State<admin> {
                               onTap: () {
                                 Navigator.push(
                                   context,
-                                  MaterialPageRoute(builder: (context) => profil(id: widget.complaint['comments'][index]?['submit']['_id'],)),
+                                  MaterialPageRoute(builder: (context) => profil(id: widget.complaint['comments'][index]?['submitter']['_id'],)),
                                 );
                               },
                               child: CircleAvatar(
                                 child: Icon(Icons.person),
                               ),
                             ),
-                            title: Text('${widget.complaint['comments'][index]?['submitter']?['firstName'] ?? ''} ${widget.complaint['comments'][index]?['submit']?['lastName'] ?? ''}'),
+                            title: Text('${widget.complaint['comments'][index]?['submitter']?['firstName'] ?? ''} ${widget.complaint['comments'][index]?['submitter']?['lastName'] ?? ''}'),
                             subtitle: Text(
                               '${widget.complaint?['comments'][index]?['comment'] ??''} ',
                               style: TextStyle(

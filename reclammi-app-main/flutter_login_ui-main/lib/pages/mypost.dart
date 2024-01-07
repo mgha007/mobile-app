@@ -15,7 +15,7 @@ class _mypostState extends State<mypost> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("My post page",
+        title: Text("my post page",
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
         iconTheme: IconThemeData(color: Colors.white),
@@ -55,7 +55,7 @@ class _mypostState extends State<mypost> {
       drawer: Drawer(),
       body: Center(
         child: Container(
-          child: Text('This is my post page '),
+          child: Text('this is my post page '),
         ),
       ),
     );

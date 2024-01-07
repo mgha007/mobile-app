@@ -56,7 +56,7 @@ class _ComplaintMapState extends State<ComplaintMap> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Complaints Map'),
+        title: const Text('carte des reclamation'),
         backgroundColor: Colors.teal,
         elevation: 4,
       ),

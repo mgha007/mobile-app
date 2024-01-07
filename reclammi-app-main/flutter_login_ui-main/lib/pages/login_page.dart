@@ -70,7 +70,7 @@ class _LoginPageState extends State<LoginPage> {
             builder: (BuildContext context) {
               return AlertDialog(
                 title: Text('Banned'),
-                content: Text('You are currently banned. Please contact support.'),
+                content: Text('Vous êtes actuellement banni. Veuillez contacter support.'),
                 actions: [
                   TextButton(
                     onPressed: () {
@@ -122,7 +122,7 @@ class _LoginPageState extends State<LoginPage> {
                               child: TextField(
                                 controller: _emailController,
                                 decoration: ThemeHelper().textInputDecoration(
-                                    'email', 'Enter your email'),
+                                    'email', 'Enter votre email'),
                               ),
                               decoration:
                               ThemeHelper().inputBoxDecorationShaddow(),
@@ -133,7 +133,7 @@ class _LoginPageState extends State<LoginPage> {
                                 controller: _passwordController,
                                 obscureText: true,
                                 decoration: ThemeHelper().textInputDecoration(
-                                    'Password', 'Enter your Password '),
+                                    'mot de passe', 'Enter votre mot de passe'),
                               ),
                               decoration:
                               ThemeHelper().inputBoxDecorationShaddow(),
@@ -152,7 +152,7 @@ class _LoginPageState extends State<LoginPage> {
                                   );
                                 },
                                 child: Text(
-                                  "Forgot your password?",
+                                  "mot de passe oublier?",
                                   style: TextStyle(
                                       color: Colors.grey,
                                       fontWeight: FontWeight.bold),
@@ -167,7 +167,7 @@ class _LoginPageState extends State<LoginPage> {
                                 child: Padding(
                                   padding: EdgeInsets.fromLTRB(40, 10, 40, 10),
                                   child: Text(
-                                    'Login'.toUpperCase(),
+                                    'se connecter'.toUpperCase(),
                                     style: TextStyle(
                                         fontSize: 20,
                                         fontWeight: FontWeight.bold,

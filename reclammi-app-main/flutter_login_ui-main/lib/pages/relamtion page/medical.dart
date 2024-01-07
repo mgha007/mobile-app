@@ -13,7 +13,7 @@ class Medical extends StatefulWidget {
 }
 
 class _MedicalState extends State<Medical> {
-  String type="Health";
+  String type="santer";
   final List<String> complaintTypes = [];
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class _MedicalState extends State<Medical> {
       appBar: AppBar(
         backgroundColor: Colors.teal,
         elevation: 4,
-        title: Text('Health'),
+        title: Text('santer'),
       ),
       body: SingleChildScrollView(
         child: Container( decoration: BoxDecoration(
@@ -34,11 +34,11 @@ class _MedicalState extends State<Medical> {
           height: MediaQuery.of(context).size.height ,
           child: Column(
             children: [
-              alignCard(icon: CupertinoIcons.exclamationmark_octagon, title: 'Medical errors', page: NewReclamationForm(type:type,complaintTypes: ['Erreurs médicales ','Sécurité du patient','Qualité des soins','Problèmes de paiement','Conduite professionnelle de la santé']), context: context),
-              alignCard(icon: CupertinoIcons.eyedropper, title: 'Patient Security',  page: NewReclamationForm(type:type,complaintTypes:['Sécurité du patient','Erreurs médicales ','Qualité des soins','Problèmes de paiement','Conduite professionnelle de la santé']), context: context),
-              alignCard(icon: CupertinoIcons.gauge_badge_plus, title: 'Quality of care',  page: NewReclamationForm(type:type,complaintTypes: ['Qualité des soins','Erreurs médicales ','Sécurité du patient','Problèmes de paiement','Conduite professionnelle de la santé']), context: context),
-              alignCard(icon: Icons.monetization_on_outlined, title: 'Payment issues',  page: NewReclamationForm(type:type,complaintTypes: ['Problèmes de paiement','Erreurs médicales ','Sécurité du patient','Qualité des soins','Conduite professionnelle de la santé']), context: context),
-              alignCard(icon: Icons.mark_chat_read_outlined, title: 'Other', page: NewReclamationForm(type:type,complaintTypes:['Conduite professionnelle de la santé','Erreurs médicales ','Sécurité du patient','Qualité des soins','Problèmes de paiement',]), context: context),
+              alignCard(icon: CupertinoIcons.exclamationmark_octagon, title: 'Erreurs médicales', page: NewReclamationForm(type:type,complaintTypes: ['Erreurs médicales ','Sécurité du patient','Qualité des soins','Problèmes de paiement','Conduite professionnelle de la santé']), context: context),
+              alignCard(icon: CupertinoIcons.eyedropper, title: 'Sécurité du patient',  page: NewReclamationForm(type:type,complaintTypes:['Sécurité du patient','Erreurs médicales ','Qualité des soins','Problèmes de paiement','Conduite professionnelle de la santé']), context: context),
+              alignCard(icon: CupertinoIcons.gauge_badge_plus, title: 'Qualité des soins',  page: NewReclamationForm(type:type,complaintTypes: ['Qualité des soins','Erreurs médicales ','Sécurité du patient','Problèmes de paiement','Conduite professionnelle de la santé']), context: context),
+              alignCard(icon: Icons.monetization_on_outlined, title: 'Problèmes de paiement',  page: NewReclamationForm(type:type,complaintTypes: ['Problèmes de paiement','Erreurs médicales ','Sécurité du patient','Qualité des soins','Conduite professionnelle de la santé']), context: context),
+              alignCard(icon: Icons.mark_chat_read_outlined, title: 'Autre', page: NewReclamationForm(type:type,complaintTypes:['Conduite professionnelle de la santé','Erreurs médicales ','Sécurité du patient','Qualité des soins','Problèmes de paiement',]), context: context),
             ],
           ),
     ),

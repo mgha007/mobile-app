@@ -158,7 +158,7 @@ class _profilState extends State<profil> {
                 ),
                 if (isAdmin)
                   Text(
-                    'Application administrator',
+                    'administrateur d application',
                     style: TextStyle(
                       fontFamily: 'Source Sans Pro',
                       color: Colors.teal.shade100,
@@ -169,7 +169,7 @@ class _profilState extends State<profil> {
                   )
                 else
                   Text(
-                    'Application user',
+                    'utulisateur d application',
                     style: TextStyle(
                       fontFamily: 'Source Sans Pro',
                       color: Colors.teal.shade100,
@@ -225,7 +225,7 @@ class _profilState extends State<profil> {
             if (user?['isBanned']==true)
               Center(
                 child: Text(
-                  'User is currently banned',
+                  'L utilisateur est actuellement banni',
                   style: TextStyle(
                     fontFamily: 'Source Sans Pro',
                     color: Colors.teal.shade100,
@@ -251,7 +251,7 @@ class _profilState extends State<profil> {
                   EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
                 ),
                 child: Text(
-                  'Grant Admin privilege',
+                  'Accorder le privilège Admin',
                   style: TextStyle(
                     color: Colors.teal,
                     fontSize: 16.0,
@@ -295,7 +295,7 @@ class _profilState extends State<profil> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text('Add the duration of the ban'),
+          title: Text('Ajouter la durée de l interdiction'),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -317,7 +317,7 @@ class _profilState extends State<profil> {
                 onPressed: () {
                   ban();
                 },
-                child: Text("Ban"),
+                child: Text("bannir"),
               )
             ],
           ),
