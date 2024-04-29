@@ -40,7 +40,7 @@ class ComplaintPopup extends StatelessWidget {
           onPressed: () {
             Navigator.of(context).pop();
           },
-          child: Text('fermer'),
+          child: Text('Close'),
         ),
       ],
     );

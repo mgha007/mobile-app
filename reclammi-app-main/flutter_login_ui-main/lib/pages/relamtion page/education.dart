@@ -21,7 +21,7 @@ class _educationState extends State<education> {
         appBar: AppBar(
           backgroundColor: Colors.teal,
           elevation: 4,
-          title: Text('education'),
+          title: Text('Education'),
         ),
         body: Container(
           decoration: BoxDecoration(
@@ -33,11 +33,11 @@ class _educationState extends State<education> {
           height: MediaQuery.of(context).size.height ,
           child: Column(
             children: [
-              alignCard(icon: CupertinoIcons.t_bubble, title: 'Qualité de léducation', page: NewReclamationForm(type:type,complaintTypes: ['Quality of education','discrimination et harcèlement','sécurité','Accès et hébergement','Conformité réglementaire'],), context: context),
-              alignCard(icon: CupertinoIcons.bandage, title: 'discrimination et harcèlement',  page: NewReclamationForm(type:type,complaintTypes:['Quality of education','discrimination et harcèlement','sécurité','Accès et hébergement','Conformité réglementaire'],), context: context),
-              alignCard(icon: CupertinoIcons.bag_badge_minus, title: 'sécurité',  page: NewReclamationForm(type:type,complaintTypes: ['Quality of education','discrimination et harcèlement','sécurité','Accès et hébergement','Conformité réglementaire'],), context: context),
-              alignCard(icon: CupertinoIcons.add_circled, title: 'Accès et hébergement',  page: NewReclamationForm(type:type,complaintTypes: ['Quality of education','discrimination et harcèlement','sécurité','Accès et hébergement','Conformité réglementaire'],), context: context),
-              alignCard(icon: Icons.mark_chat_read_outlined, title: 'Autre', page: NewReclamationForm(type:type,complaintTypes:  ['Quality of education','discrimination et harcèlement','sécurité','Accès et hébergement','Conformité réglementaire'],), context: context),
+              alignCard(icon: CupertinoIcons.t_bubble, title: 'Quality of education', page: NewReclamationForm(type:type,complaintTypes: ['Quality of education','discrimination et harcèlement','sécurité','Accès et hébergement','Conformité réglementaire'],), context: context),
+              alignCard(icon: CupertinoIcons.bandage, title: 'discrimination and harassment',  page: NewReclamationForm(type:type,complaintTypes:['Quality of education','discrimination et harcèlement','sécurité','Accès et hébergement','Conformité réglementaire'],), context: context),
+              alignCard(icon: CupertinoIcons.bag_badge_minus, title: 'Security',  page: NewReclamationForm(type:type,complaintTypes: ['Quality of education','discrimination et harcèlement','sécurité','Accès et hébergement','Conformité réglementaire'],), context: context),
+              alignCard(icon: CupertinoIcons.add_circled, title: 'Access and accommodation',  page: NewReclamationForm(type:type,complaintTypes: ['Quality of education','discrimination et harcèlement','sécurité','Accès et hébergement','Conformité réglementaire'],), context: context),
+              alignCard(icon: Icons.mark_chat_read_outlined, title: 'Other', page: NewReclamationForm(type:type,complaintTypes:  ['Quality of education','discrimination et harcèlement','sécurité','Accès et hébergement','Conformité réglementaire'],), context: context),
 
             ],
           ),

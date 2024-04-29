@@ -122,7 +122,7 @@ class _LoginPageState extends State<LoginPage> {
                               child: TextField(
                                 controller: _emailController,
                                 decoration: ThemeHelper().textInputDecoration(
-                                    'email', 'Enter votre email'),
+                                    'E-mail', 'Enter votre email'),
                               ),
                               decoration:
                               ThemeHelper().inputBoxDecorationShaddow(),
@@ -133,7 +133,7 @@ class _LoginPageState extends State<LoginPage> {
                                 controller: _passwordController,
                                 obscureText: true,
                                 decoration: ThemeHelper().textInputDecoration(
-                                    'mot de passe', 'Enter votre mot de passe'),
+                                    'Password', 'Enter votre mot de passe'),
                               ),
                               decoration:
                               ThemeHelper().inputBoxDecorationShaddow(),
@@ -152,7 +152,7 @@ class _LoginPageState extends State<LoginPage> {
                                   );
                                 },
                                 child: Text(
-                                  "mot de passe oublier?",
+                                  "Forgot password?",
                                   style: TextStyle(
                                       color: Colors.grey,
                                       fontWeight: FontWeight.bold),
@@ -167,7 +167,7 @@ class _LoginPageState extends State<LoginPage> {
                                 child: Padding(
                                   padding: EdgeInsets.fromLTRB(40, 10, 40, 10),
                                   child: Text(
-                                    'se connecter'.toUpperCase(),
+                                    'Log In'.toUpperCase(),
                                     style: TextStyle(
                                         fontSize: 20,
                                         fontWeight: FontWeight.bold,

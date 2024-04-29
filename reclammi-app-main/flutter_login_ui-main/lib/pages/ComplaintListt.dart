@@ -60,7 +60,7 @@ class _ComplaintListState extends State<toutlespost> {
       appBar: AppBar(
         backgroundColor: Colors.teal,
         elevation: 4,
-        title: Text('Liste de réclamations'),
+        title: Text('Complaints List'),
       ),
       body: ListView(
         children: [
@@ -72,7 +72,7 @@ class _ComplaintListState extends State<toutlespost> {
             ),
             child: DropdownButtonFormField<String>(
               decoration: InputDecoration.collapsed(
-                hintText: 'Filtrer par catégorie',
+                hintText: 'Filter per category',
               ),
               value: _selectedCategory,
               items: [

@@ -170,7 +170,7 @@ class _NewReclamationFormState extends State<NewReclamationForm> {
       appBar: AppBar(
         backgroundColor: Colors.teal,
         elevation: 4,
-        title: Text('nouveau Reclamation'),
+        title: Text('New Complaint'),
       ),
       body: SingleChildScrollView(
         child: Container(color: Colors.grey[100],
@@ -182,7 +182,7 @@ class _NewReclamationFormState extends State<NewReclamationForm> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'titre:',
+                    'Title:',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontFamily: 'Poppins' ,
@@ -192,7 +192,7 @@ class _NewReclamationFormState extends State<NewReclamationForm> {
                   SizedBox(height: 5.0),
                   TextFormField(
                     decoration: InputDecoration(
-                      hintText: 'donner un titre',
+                      hintText: 'Give a title',
                       hintStyle: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontFamily: 'Poppins' ,
@@ -214,7 +214,7 @@ class _NewReclamationFormState extends State<NewReclamationForm> {
                       Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
-                          'entrer votre location:',
+                          'Enter you location',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.bold,
@@ -256,7 +256,7 @@ class _NewReclamationFormState extends State<NewReclamationForm> {
 
                   SizedBox(height: 16.0),
                   Text(
-                    'Select type de reclamation:',
+                    'Select type of complaint:',
                     style: TextStyle(
                       fontFamily: 'Poppins' ,
                       fontWeight: FontWeight.bold,
@@ -297,7 +297,7 @@ class _NewReclamationFormState extends State<NewReclamationForm> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'description:',
+                        'Description:',
                         style: TextStyle(
                           fontFamily: 'Poppins' ,
                           fontWeight: FontWeight.bold,
@@ -308,7 +308,7 @@ class _NewReclamationFormState extends State<NewReclamationForm> {
                       TextFormField(
                         maxLines: 5,
                         decoration: InputDecoration(
-                          hintText: 'votre description',
+                          hintText: 'Give a Description',
                           hintStyle: TextStyle(
                             fontFamily: 'Poppins' ,
                             fontWeight: FontWeight.bold,
@@ -337,7 +337,7 @@ class _NewReclamationFormState extends State<NewReclamationForm> {
                         getImage();
                       },
                       child: Text(
-                        'ajouter une photo',
+                        'Add a photo',
                         style: TextStyle(fontFamily: 'Poppins' ,
                           fontWeight: FontWeight.bold,
                           fontSize: 18.0,
@@ -366,7 +366,7 @@ class _NewReclamationFormState extends State<NewReclamationForm> {
 
                       },
                       child: Text(
-                        'Soumettre reclamation',
+                        'Submit complaint',
                         style: TextStyle(fontFamily: 'Poppins' ,
                           fontWeight: FontWeight.bold,
                           fontSize: 18.0,

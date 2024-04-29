@@ -125,7 +125,7 @@ class _RegistrationPageState extends State<RegistrationPage>{
                             Container(
                               child: TextField(
                                 controller:_firstnameController ,
-                                decoration: ThemeHelper().textInputDecoration('nom', 'Enter votre nom'),
+                                decoration: ThemeHelper().textInputDecoration('Last name', 'Enter votre nom'),
                               ),
                               decoration: ThemeHelper().inputBoxDecorationShaddow(),
                             ),
@@ -133,7 +133,7 @@ class _RegistrationPageState extends State<RegistrationPage>{
                             Container(
                               child: TextField(
                                 controller:_lastnameController ,
-                                decoration: ThemeHelper().textInputDecoration('prenom', 'Enter votre prenom'),
+                                decoration: ThemeHelper().textInputDecoration('First name', 'Enter votre prenom'),
                               ),
                               decoration: ThemeHelper().inputBoxDecorationShaddow(),
                             ),
@@ -157,7 +157,7 @@ class _RegistrationPageState extends State<RegistrationPage>{
                               child: TextFormField(
                                 controller:_mobileController ,
                                 decoration: ThemeHelper().textInputDecoration(
-                                    "téléphone",
+                                    "Phone number",
                                     "Enter votre num téléphone"),
                                 keyboardType: TextInputType.phone,
                                 validator: (val) {
@@ -175,7 +175,7 @@ class _RegistrationPageState extends State<RegistrationPage>{
                                 obscureText: true,
                                 controller:_passwordController ,
                                 decoration: ThemeHelper().textInputDecoration(
-                                    "mot de passe*", "Enter votre mot de passe"),
+                                    "Password", "Enter votre mot de passe"),
                                 validator: (val) {
                                   if (val!.isEmpty) {
                                     return "Please enter your password";
@@ -193,7 +193,7 @@ class _RegistrationPageState extends State<RegistrationPage>{
                                 child: Padding(
                                   padding: const EdgeInsets.fromLTRB(40, 10, 40, 10),
                                   child: Text(
-                                    "enrigistrer".toUpperCase(),
+                                    "Register".toUpperCase(),
                                     style: TextStyle(
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,

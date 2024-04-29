@@ -33,7 +33,7 @@ Future<Uint8List> generatePdf(final PdfPageFormat pageFormat, final complaint) a
                     crossAxisAlignment: pw.CrossAxisAlignment.end,
                     children: [
                       pw.Text(
-                        'Telephone',
+                        'Phone',
                         style: pw.TextStyle(
                           fontSize: 16,
                           fontWeight: pw.FontWeight.bold,
@@ -84,7 +84,7 @@ Future<Uint8List> generatePdf(final PdfPageFormat pageFormat, final complaint) a
         ),
         pw.Center(
           child: pw.Text(
-            'Reclamation',
+            'Complaint',
             textAlign: pw.TextAlign.center,
             style: pw.TextStyle(
               fontSize: 30,
@@ -98,7 +98,7 @@ Future<Uint8List> generatePdf(final PdfPageFormat pageFormat, final complaint) a
             pw.Align(
               alignment: pw.Alignment.centerLeft,
               child: pw.Text(
-                'Soumet par:',
+                'By  :',
                 style: pw.TextStyle(
                   fontSize: 16,
                   fontWeight: pw.FontWeight.bold,
@@ -119,7 +119,7 @@ Future<Uint8List> generatePdf(final PdfPageFormat pageFormat, final complaint) a
             pw.Align(
               alignment: pw.Alignment.centerLeft,
               child: pw.Text(
-                'Titre:',
+                'Title:',
                 style: pw.TextStyle(
                   fontSize: 16,
                   fontWeight: pw.FontWeight.bold,

@@ -38,7 +38,7 @@ class _pdfpageState extends State<pdfpage> {
       appBar: AppBar(
         backgroundColor: Colors.teal,
         elevation: 4,
-        title: Text('pdf'),
+        title: Text('PDF'),
       ),
       body: PdfPreview(
         maxPageWidth:700,

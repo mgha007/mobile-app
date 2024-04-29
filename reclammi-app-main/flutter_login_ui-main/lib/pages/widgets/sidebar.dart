@@ -58,7 +58,7 @@ class DrawerWidget extends StatelessWidget {
                 color: Colors.black,
               ),
               title: Text(
-                'Mes Posts',
+                'My Posts',
                 style: TextStyle(fontSize: 16, color: Colors.black,fontFamily:'Poppins',),
               ),
               onTap: () {
@@ -74,7 +74,7 @@ class DrawerWidget extends StatelessWidget {
                 color: Colors.black,
               ),
               title: Text(
-                'tout les  Posts',
+                'All Posts',
                 style: TextStyle(fontSize: 16, color: Colors.black,fontFamily:'Poppins',),
               ),
               onTap: () {
@@ -90,7 +90,7 @@ class DrawerWidget extends StatelessWidget {
                 color: Colors.black,
               ),
               title: Text(
-                'Statistiques',
+                'Statistics',
                 style: TextStyle(fontSize: 16, color: Colors.black,fontFamily:'Poppins',),
               ),
               onTap: () {
@@ -122,7 +122,7 @@ class DrawerWidget extends StatelessWidget {
                 color: Colors.black,
               ),
               title: Text(
-                'Se déconnecter',
+                'Log Out',
                 style: TextStyle(fontSize: 16, color: Colors.black,fontFamily:'Poppins',),
               ),
               onTap: () {

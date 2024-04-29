@@ -157,7 +157,7 @@ class _ProfilePageState extends State<ProfilePage>{
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         customCard(icon: Icons.add_road_outlined, title: 'Transportation', subtitle: 'Accessibility, Quality of service ',page: transport(),context: context, ),
-                        customCard(icon: Icons.water_sharp, title: 'eau', subtitle: 'Quality of service / Water quality',page: water(),context: context, )
+                        customCard(icon: Icons.water_sharp, title: 'Water', subtitle: 'Quality of service / Water quality',page: water(),context: context, )
                       ],
                     ),
                   ),

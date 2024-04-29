@@ -213,7 +213,7 @@ class _adminState extends State<admin> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Soummet par:',
+                      'By:',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 18.0,
@@ -254,7 +254,7 @@ class _adminState extends State<admin> {
 
                     SizedBox(height:10.0),
                     Text(
-                      'Titre:',
+                      'Title:',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 18.0,
@@ -299,7 +299,7 @@ class _adminState extends State<admin> {
                     ),
                     SizedBox(height: 16.0),
                     Text(
-                      'Statu:',
+                      'Status:',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 18.0,
@@ -413,7 +413,7 @@ class _adminState extends State<admin> {
     children: [
     SizedBox(height: 10),
     Text(
-    'Entrer la réponse à cette réclamation:',
+    'Write a response for this complaint:',
     style: TextStyle(
     fontFamily: 'Poppins',
     fontWeight: FontWeight.bold,
@@ -423,7 +423,7 @@ class _adminState extends State<admin> {
     SizedBox(height: 16.0),
     TextFormField(
     decoration: InputDecoration(
-    hintText: 'Complaint responce',
+    hintText: 'Complaint response',
     hintStyle: TextStyle(
     fontFamily: 'Poppins',
     fontWeight: FontWeight.bold,
@@ -450,7 +450,7 @@ class _adminState extends State<admin> {
     setState(() {});
     },
     child: Text(
-    'Envoyer votre réponse',
+    'Send response',
     style: TextStyle(
     fontFamily: 'Poppins',
     fontWeight: FontWeight.bold,
@@ -473,7 +473,7 @@ class _adminState extends State<admin> {
 
                     SizedBox(height: 16.0),
                     Text(
-                      'Commentaire:',
+                      'Comment:',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 18.0,
